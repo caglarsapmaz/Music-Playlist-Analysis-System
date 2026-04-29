@@ -1,26 +1,67 @@
-# Music Playlist Analysis System
+# 🎵 Music Playlist Analysis System
 
-## Proje Amacı
-Bu proje, bir müzik çalma listesini analiz etmek için Python kullanılarak geliştirilmiş bir uygulamadır. Öğrencilerin temel Python veri yapıları (liste, sözlük) ve fonksiyon (metot) tanımlama becerilerini ölçmeyi hedeflemektedir. Konsol çıktısına ek olarak kullanıcı dostu bir grafiksel arayüz (GUI) sunmaktadır.
+Bu proje, bir müzik çalma listesini hem terminal üzerinden analiz eden hem de kullanıcı dostu bir arayüz (GUI) ile yönetilmesini sağlayan kapsamlı bir Python uygulamasıdır.
 
-## Metot Açıklamaları
-Projede istenen zorunlu ve bonus metotlar eksiksiz olarak kodlanmıştır:
+## 👤 Geliştirici
+**Çağlar SAPMAZ** tarafından yapay zekadan destek alınarak geliştirilmiştir.
 
-* **Zorunlu Metotlar:**
-  * `get_total_duration(songs)`: Listedeki tüm şarkıların saniye cinsinden toplam süresini toplar ve döndürür.
-  * `get_most_played_song(songs)`: Dinlenme sayısı (`plays`) değerine bakarak en yüksek olan şarkı sözlüğünü bulur.
-  * `get_average_duration(songs)`: Toplam süreyi şarkı sayısına bölerek ortalama şarkı süresini hesaplar.
-  * `print_playlist(songs)`: Çalma listesini konsol üzerinde okunabilir bir tablo halinde düzenli şekilde yazdırır.
-  * `main()`: En az 5 şarkılık veri yapısını oluşturur, tüm analitik metotları çağırır ve görsel arayüzü başlatır.
+---
 
-* **Bonus Metotlar:**
-  * `get_longest_song(songs)`: Listedeki süresi (`duration`) en uzun olan şarkıyı bulur.
-  * `filter_by_artist(songs, artist)`: Gönderilen sanatçı ismine sahip tüm şarkıları filtreleyip yeni bir liste döndürür.
-  * `sort_by_plays(songs)`: Şarkıları dinlenme sayılarına göre çoktan aza doğru sıralar.
+## 🚀 Öne Çıkan Özellikler
 
-## Çalıştırma Bilgisi
-1. Bilgisayarınızda Python'ın yüklü olduğundan emin olun. (Sürüm 3.x önerilir).
-2. Terminal veya komut satırını açın.
-3. Proje dizinine gidin.
-4. `python main.py` komutunu çalıştırın.
-5. İlk olarak zorunlu ve bonus çıktıları konsolda göreceksiniz. Ardından analizleri görsel olarak inceleyebileceğiniz Tkinter masaüstü arayüzü açılacaktır. (Ek bir kütüphane kurulumuna gerek yoktur, Tkinter Python ile gömülü gelmektedir).
+Uygulama, veri işleme ve görselleştirme konularında iki farklı katman sunar:
+
+### 🧠 Core (Temel) Analiz Yetenekleri
+* **Toplam Süre Hesaplama:** Listede bulunan tüm şarkıların toplam uzunluğunu saniye bazında hesaplar.
+* **Popülerlik Analizi:** Dinlenme sayılarına göre en popüler şarkıyı anında tespit eder.
+* **İstatistiksel Ortalama:** Şarkıların ortalama sürelerini bularak listenin genel temposunu analiz eder.
+* **Terminal Raporlama:** Verileri konsol ekranında düzenli tablolar halinde yazdırır.
+
+### 🌟 Bonus Fonksiyonlar
+* **Zamanın Devi:** Listenin süresi en uzun olan şarkısını belirler.
+* **Sanatçı Filtresi:** Belirli bir sanatçıya ait eserleri listeden ayıklar.
+* **Akıllı Sıralama:** Şarkıları en çok dinlenenden en aza doğru dinamik olarak sıralar.
+
+---
+
+## 🎨 Kullanıcı Arayüzü (GUI)
+
+Modern bir **Dark Mode** temasıyla tasarlanan arayüz şu özellikleri içerir:
+
+* **Spotify Estetiği:** Koyu arka plan (#121212) ve canlı yeşil (#1DB954) detaylarla şık bir görünüm.
+* **İnteraktif Tablo:** Tüm şarkı bilgilerini içeren etkileşimli bir `Treeview` yapısı.
+* **Hızlı Erişim Butonları:**
+    * 📊 **Analiz Raporu:** Genel istatistikleri bir popup penceresinde gösterir.
+    * 📶 **Sırala:** Tabloyu dinlenme sayısına göre anlık olarak günceller.
+    * ⏱ **En Uzun Şarkı:** En uzun parçayı hızlıca raporlar.
+    * 🔄 **Sıfırla:** Yapılan filtreleri temizleyerek orijinal listeyi geri yükler.
+
+---
+
+## 🛠 Teknik Detaylar
+
+* **Dil:** Python 
+* **Arayüz Kütüphanesi:** `tkinter` & `ttk`
+* **Tema:** Clam (Customized Dark Theme)
+
+### Dahili Şarkı Listesi
+Uygulama içerisinde örnek olarak şu sanatçıların verileri bulunmaktadır:
+* Inna
+* Gavin DeGraw
+* Ivan B
+* J. Cole
+* Eminem
+
+---
+
+## 🖥 Kurulum ve Çalıştırma
+
+1.  Bilgisayarınızda Python yüklü olduğundan emin olun.
+2.  Depoyu klonlayın veya `main.py` dosyasını indirin.
+3.  Terminal üzerinden uygulamayı başlatın:
+    ```bash
+    python main.py
+    ```
+
+---
+🎧 *Müzik verilerinizi analiz etmek hiç bu kadar şık olmamıştı!*
