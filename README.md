@@ -1,3 +1,4 @@
+<img width="762" height="644" alt="Ekran Resmi 2026-04-29 15 32 25" src="https://github.com/user-attachments/assets/679c8a18-58aa-4173-a242-848d4ad7c46b" />
 # 🎵 Music Playlist Analysis System
 
 Bu proje, bir müzik çalma listesini hem terminal üzerinden analiz eden hem de kullanıcı dostu bir arayüz (GUI) ile yönetilmesini sağlayan kapsamlı bir Python uygulamasıdır.
