@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-FF6F00?style=flat&logo=python&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis-239120?style=flat&logo=pandas&logoColor=white)
 # 🎵 Music Playlist Analysis System
 
 Bu proje, bir müzik çalma listesini hem terminal üzerinden analiz eden hem de kullanıcı dostu bir arayüz (GUI) ile yönetilmesini sağlayan kapsamlı bir Python uygulamasıdır.
